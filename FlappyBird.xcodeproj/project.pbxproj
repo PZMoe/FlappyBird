@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD056D7C21D6265B004AB108 /* player.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CD056D7B21D6265B004AB108 /* player.atlas */; };
 		CDF47D0921D61782006EDC97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF47D0821D61782006EDC97 /* AppDelegate.swift */; };
-		CDF47D0B21D61783006EDC97 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CDF47D0A21D61783006EDC97 /* GameScene.sks */; };
-		CDF47D0D21D61783006EDC97 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CDF47D0C21D61783006EDC97 /* Actions.sks */; };
 		CDF47D0F21D61783006EDC97 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF47D0E21D61783006EDC97 /* GameScene.swift */; };
 		CDF47D1121D61783006EDC97 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF47D1021D61783006EDC97 /* GameViewController.swift */; };
 		CDF47D1421D61783006EDC97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF47D1221D61783006EDC97 /* Main.storyboard */; };
@@ -29,10 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD056D7B21D6265B004AB108 /* player.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = player.atlas; sourceTree = "<group>"; };
 		CDF47D0521D61782006EDC97 /* FlappyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF47D0821D61782006EDC97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDF47D0A21D61783006EDC97 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		CDF47D0C21D61783006EDC97 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		CDF47D0E21D61783006EDC97 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CDF47D1021D61783006EDC97 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CDF47D1321D61783006EDC97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,9 +81,8 @@
 		CDF47D0721D61782006EDC97 /* FlappyBird */ = {
 			isa = PBXGroup;
 			children = (
+				CD056D7B21D6265B004AB108 /* player.atlas */,
 				CDF47D0821D61782006EDC97 /* AppDelegate.swift */,
-				CDF47D0A21D61783006EDC97 /* GameScene.sks */,
-				CDF47D0C21D61783006EDC97 /* Actions.sks */,
 				CDF47D0E21D61783006EDC97 /* GameScene.swift */,
 				CDF47D1021D61783006EDC97 /* GameViewController.swift */,
 				CDF47D1221D61783006EDC97 /* Main.storyboard */,
@@ -186,11 +183,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD056D7C21D6265B004AB108 /* player.atlas in Resources */,
 				CDF47D1421D61783006EDC97 /* Main.storyboard in Resources */,
-				CDF47D0B21D61783006EDC97 /* GameScene.sks in Resources */,
 				CDF47D1621D61790006EDC97 /* Assets.xcassets in Resources */,
 				CDF47D1921D61790006EDC97 /* LaunchScreen.storyboard in Resources */,
-				CDF47D0D21D61783006EDC97 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,14 +368,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JM7P577NK;
 				INFOPLIST_FILE = FlappyBird/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.patrick.FlappyBird;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.patrick.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,14 +389,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JM7P577NK;
 				INFOPLIST_FILE = FlappyBird/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.patrick.FlappyBird;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.patrick.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
